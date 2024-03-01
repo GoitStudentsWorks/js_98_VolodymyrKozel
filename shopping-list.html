@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_98_VolodymyrKozel/assets/favicon-f672d7dd.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    
+    <script type="module" crossorigin src="/js_98_VolodymyrKozel/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_98_VolodymyrKozel/assets/vendor-94a85c0e.js">
+    <link rel="modulepreload" crossorigin href="/js_98_VolodymyrKozel/assets/header-17cd1eb3.js">
+    <link rel="stylesheet" href="/js_98_VolodymyrKozel/assets/header-c6892005.css">
+    <link rel="stylesheet" href="/js_98_VolodymyrKozel/assets/vendor-bdf8c32b.css">
+    <link rel="stylesheet" href="/js_98_VolodymyrKozel/assets/shopping-list-1faef75f.css">
+  </head>
+  <body>
+    <header class="header">
+    <div class="container header-container">
+        <div class="header-logo">
+            <a href="index.html" class="header-logo-link">
+                <svg class="header-logo-icon" width="24" height="24">
+                    <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-logo"></use>
+                </svg>
+                <svg class="header-logo-icon-bookshelf" width="77" height="14">
+                    <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-bookshelf"></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="header-nav">
+            <li class="header-nav-link">
+                <a class="header-nav-link header-nav-shop header-nav-home-btn" href="index.html">Home</a>
+            </li>
+            <li class="header-nav-link">
+                <a class=" header-nav-link header-nav-shop" href="shopping-list.html">
+                    Shopping list
+                    <svg class="header-nav-shop-svg" width="14" height="17">
+                        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-bag"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="user-choice">
+            <div class="checkbox-theme">
+                <input class="checkbox-input" type="checkbox" id="checkbox" name="check" />
+                <label class="checkbox-lable" for="checkbox">
+                    <svg class="owl-icon" width="18" height="18">
+                        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-owl"></use>
+                    </svg>
+                    <svg class="owl-light-icon" width="18" height="18">
+                        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-owl-light"></use>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="header-burger">
+                <span class="burger-menu"></span>
+                <span class="burger-menu"></span>
+            </div>
+            <div class="user-sign-up">
+                <button class="user-btn" id="login-btn">
+                    <svg class="user-btn-icon is-hidden" width="19" height="19">
+                        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-user"></use>
+                    </svg>
+                    <span class="user-name-btn">Sign up</span>
+                    <svg class="arrow-btn-icon" width="16" height="12">
+                        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container container-flex-xl">
+      <aside class="shopping-aside">
+        <section class="support">
+  <div class="support-header">
+    <h3 class="support-title">Support Ukraine</h3>
+    <svg class="support-triden" width="20" height="32">
+      <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-trident"></use>
+    </svg>
+  </div>
+
+  <div class="swiper support-swiper">
+    <ul class="swiper-wrapper"></ul>
+  </div>
+
+  <div class="swiper-navigation">
+    <button class="swiper-button-nav next-btn">
+      <svg class="support-svg-icon icon-revert" width="22" height="32">
+        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-scroll-up"></use>
+      </svg>
+    </button>
+
+    <button class="swiper-button-nav prev-btn swiper-button-hidden">
+      <svg class="support-svg-icon" width="22" height="32">
+        <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-scroll-up"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      </aside>
+      <main>
+        <section class="shopping-section">
+          <h1 class="shopping-list-text">
+            Shopping <span class="shopping-list-color">List</span>
+          </h1>
+          <ul class="shopping-list-container js-shopping-main"></ul>
+          <div id="tui-pagination-container" class="tui-pagination"></div>
+          <div class="shopping-box-empty">
+            <p class="shopping-list-container-text">
+              This page is empty, add some books <br />
+              and proceed to order.
+            </p>
+            <picture>
+              <source
+                srcset="/js_98_VolodymyrKozel/assets/empty-mobi-1x-e834be2d.png "
+                width="265"
+                height="198"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/js_98_VolodymyrKozel/assets/empty-1x-de0fe82a.png "
+                width="322"
+                height="241"
+                media="(min-width: 768px)"
+              />
+              <img src="/js_98_VolodymyrKozel/assets/empty-1x-de0fe82a.png" alt="empty" />
+            </picture>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="container mobile-menu-container">
+  <div class="menu-box js-menu-container">
+    <ul class="link-box">
+      <li>
+          <a class="btn-mobile-menu mobile-menu-link js-btn-home-menu active" href="index.html">
+            HOME
+          </a>
+      </li>
+      <li>
+        <a class="btn-mobile-menu mobile-menu-link " href="shopping-list.html">
+          SHOPPING LIST
+          <svg class="bag-icons" width="14" height="17" fill="#fff">
+            <use href="/js_98_VolodymyrKozel/assets/icons-509775d3.svg#icon-bag"></use>
+        </svg>
+              </a>
+      </li>
+    </ul>
+  <div class="books-box">
+    <img src="/js_98_VolodymyrKozel/assets/menu-png-group-c91e361c.png" alt="group-png">
+  </div>
+</div>
+</div>
+
+    
+  </body>
+</html>
